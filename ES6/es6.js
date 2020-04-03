@@ -21,3 +21,23 @@ let word2 = "World";
  bb.push('GH');
 
  console.log(bb);
+
+
+ //replacing var with let/const
+
+ //Hoisting
+ if(false)
+ {
+     var foo = 5;
+
+ }
+ console.log(foo);
+
+//  Blocked scope
+
+ if(false)
+ {
+     let foo2 = 6;
+
+ }
+ console.log(foo2);
