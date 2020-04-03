@@ -35,9 +35,23 @@ let word2 = "World";
 
 //  Blocked scope
 
- if(false)
- {
-     let foo2 = 6;
+//  if(false)
+//  {
+//      let foo2 = 6;
 
- }
- console.log(foo2);
+//  }
+//  console.log(foo2);
+
+ //const - read only
+
+ const consta = 5;
+ //consta = 7;
+
+ console.log(consta);
+
+
+ //Import and export
+
+ import {abc} from './site1'
+
+ console.log(abc);
