@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html>
+<html style="background-color: black;">
 <head>
 <title>Page Title</title>
 <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
@@ -10,8 +10,37 @@
 
 
 <script src="es6.js"></script>
+
+<script>
+  "use strict";
+
+var foo = 'bar';
+
+function bar(){
+  
+  console.log(foo);
+  var foo  = 'baz';
+  console.log(foo);
+}
+
+console.log(foo);
+bar();
+console.log(foo);
+
+
+function baz(foo)
+{
+  foo = 'bam';
+  bam = 'yay';
+}
+
+baz();
+
+
+
+</script>
 </head>
-<body>
+<body style="background-color: black;">
 <div class="container">
     <div class="row header">
       <h1>CONTACT US &nbsp;</h1>

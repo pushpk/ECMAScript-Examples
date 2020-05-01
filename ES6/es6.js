@@ -1,57 +1,24 @@
-// Text Literals
+function first (){
+    let f1= "hi";
+    function second (){
+        console.log(f1);
 
-let word1 = 'Hello';
-let word2 = "World";
+    }
 
- const fullname = `${word1} ${word2}`;
-
- console.log(fullname);
-
- //Destructuring Array
-
- let [a,b,c,d,e,f] = ['A','B','C','D','F'];
-
- console.log(a);
-
- //spread operator
-
- let aa = ['A','B','C','D','F'];
- let bb = [...aa]
-
- bb.push('GH');
-
- console.log(bb);
+    return second;
+}
 
 
- //replacing var with let/const
+const firstcall = first();
+firstcall();
 
- //Hoisting
- if(false)
- {
-     var foo = 5;
+export class a {
+    b = 9;
 
- }
- console.log(foo);
-
-//  Blocked scope
-
-//  if(false)
-//  {
-//      let foo2 = 6;
-
-//  }
-//  console.log(foo2);
-
- //const - read only
-
- const consta = 5;
- //consta = 7;
-
- console.log(consta);
+    c(){
+        console.log(this.b);
+    }
+}
 
 
- //Import and export
-
- import {abc} from './site1'
-
- console.log(abc);
+console.log(a)
